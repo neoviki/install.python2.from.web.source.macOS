@@ -18,3 +18,9 @@
 
     1. macOS 10.15.7 ( macOS Catalina )
 
+
+## Dependency Source ( Reference )
+
+    1. Python ( https://www.python.org/ftp/python/2.7.9/Python-2.7.9.tar.xz )
+    2. Zlib   ( https://zlib.net/zlib-1.2.11.tar.gz )
+    3. setuptool ( https://launchpad.net/ubuntu/+archive/primary/+sourcefiles/python-setuptools/44.1.1-1/python-setuptools_44.1.1.orig.tar.xz )
