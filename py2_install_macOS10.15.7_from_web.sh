@@ -1,6 +1,24 @@
-#Python2 Install
+#!/bin/bash
+
+# -----------------------------------------------------
+#
+#   Python 2 Installer From Source on Web ( macOS 10.15.7 )
+#
+# -----------------------------------------------------
+#
+#               Author  : Natan @ Vignesh Natarajan
+#               Version : v1.0
+#
+# -----------------------------------------------------
 
 PYTHON_DIR="$HOME/mypy2"
+
+source ./config.sh
+
+if [ $? -ne 0 ]; then
+    echo "error: importing config.sh"
+    exit 1
+fi
 
 echo "Installing Python @ $PYTHON_DIR"
 
@@ -28,7 +46,7 @@ mkdir -p $PYTHON_DIR/bin/
 cd $PYTHON_DIR/source/
 [ $? -ne 0 ] && { echo "error line ( ${LINENO} )"; exit 1; }
 
-which brew
+which brew 1>/dev/null 2>/dev/null
 if [ $? -ne 0 ]; then
 	echo "error: brew not found"
 	echo ""
@@ -43,13 +61,14 @@ fi
 
 brew install wget
 
-wget https://www.python.org/ftp/python/2.7.9/Python-2.7.9.tar.xz
+wget $PYTHON_SOURCE_WEB
 [ $? -ne 0 ] && { echo "error line ( ${LINENO} )"; exit 1; }
 
-tar -zxvf Python-2.7.9.tar.xz
-[ $? -ne 0 ] && { echo "error line ( ${LINENO} )"; exit 1; }
+#Extract downloade python source file ( there will be only one source with .xz extension )
+tar -zxvf *.xz
 
-cd Python-2.7.9
+#Enter into extracted directory ( if everything goes good, there will be only one directory )
+cd `ls -d */`
 [ $? -ne 0 ] && { echo "error line ( ${LINENO} )"; exit 1; }
 
 ./configure --prefix=$PYTHON_DIR/bin/
