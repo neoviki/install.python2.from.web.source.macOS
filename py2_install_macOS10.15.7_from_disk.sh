@@ -61,7 +61,6 @@ ln -s /usr/local/zlib/lib/pkgconfig/zlib.pc /usr/local/lib/pkgconfig/
 
 export LD_LIBRARY_PATH=/usr/local/lib:$LD_LIBRARY_PATH >> $HOME/.bash_profile
 export PKG_CONFIG_PATH=/usr/local/lib/pkgconfig:$PKG_CONFIG_PATH >>   $HOME/.bash_profile
-$HOME/mypy2/bin/bin/python2 setup.py install
 
 ## ZLIB Installation [ E ]
 
