@@ -6,7 +6,7 @@
 #
 # -----------------------------------------------------
 #
-#               Author  : Natan @ Vignesh Natarajan
+#               Author  : Viki @ Vignesh Natarajan
 #               Version : v1.0
 #
 # -----------------------------------------------------
