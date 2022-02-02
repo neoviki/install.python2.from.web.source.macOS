@@ -1,6 +1,6 @@
 ## Install python 2.7.9 on macOS 
 
-    This utility install python 2.7.9 from source. 
+    This utility install python 2.7.9 from source at custom location ( $HOME/mypy2 ). 
 
 ## Installation Steps ( From source code on Disk )
 
