@@ -4,8 +4,7 @@
 #
 #   Config file for any of the following utils,
 #
-#       1. py2_install_macOS10.15.7_from_disk.sh 
-#       2. py2_install_macOS10.15.7_from_web.sh
+#       1. py2_install_macOS10.15.7_from_web.sh
 #
 #
 #
