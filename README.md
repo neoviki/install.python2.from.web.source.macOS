@@ -4,8 +4,8 @@
 
 ## Installation Steps ( From source code from Web )
 
-    $git clone https://github.com/vikiworks-io/install_python2_from_source_macOS.git
-    $cd install_python2_from_source_macOS
+    $git clone https://github.com/vikiworks-io/install_python2_from_web_source_macOS.git
+    $cd install_python2_from_web_source_macOS
     $./py2_install_macOS10.15.7_from_web.sh
 
 ## Tested macOS version
